@@ -5,8 +5,8 @@ import './app.css';
 class Lampada extends React.Component {
   render () {
     return (
-      <div>
-        Lâmpada
+      <div class={this.props.cor}>
+       <p>Lâmpada</p>
       </div>
     )
   }

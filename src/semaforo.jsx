@@ -7,9 +7,9 @@ class Semaforo extends React.Component {
   render () {
     return (
       <div>
-        <Lampada cor='Vermelho'/>
-        <Lampada cor='Amarelo'/>
-        <Lampada cor='Verde'/>
+        <Lampada cor='vermelho' estado='0'/>
+        <Lampada cor='amarelo' estado='0'/>
+        <Lampada cor='verde' estado='0'/>
       </div>
     )
   }

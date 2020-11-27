@@ -15,3 +15,15 @@ code {
 .App {
   text-align: center;
 }
+
+.vermelho {
+  background: red;
+}
+
+.amarelo {
+  background: yellow;
+}
+
+.verde {
+  background: green;
+}
