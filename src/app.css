@@ -16,6 +16,10 @@ code {
   text-align: center;
 }
 
+.lampada {
+  width: 5;
+}
+
 .vermelho {
   background: red;
 }
