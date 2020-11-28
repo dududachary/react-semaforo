@@ -5,7 +5,7 @@ import "./app.css";
 class Controlador extends React.Component {
   render () {
     return (
-      <button>
+      <button onClick={ () => {this.props.handleClick(this.props.ciclo)} }>
         Controlador
       </button>
     )
