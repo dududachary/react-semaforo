@@ -6,7 +6,7 @@ class Lampada extends React.Component {
   render () {
     return (
       <div class={this.props.cor}>
-       <p>Lâmpada</p>
+       <p>Lâmpada {this.props.estado}</p>
       </div>
     )
   }
