@@ -27,13 +27,42 @@ class Semaforo extends React.Component {
     
   }
   
+  controlaSemaforo = (ciclo) => {
+    this.controlaCiclo(ciclo);
+    switch (ciclo) {
+      case 1:
+        this.setState({
+          estadoLamapadaVermelha: '1',
+          estadoLampadaAmarela: '0',
+          estadoLampadaVerde: '0'
+        });
+      break;
+      
+      case 2:
+        this.setState({
+          estadoLamapadaVermelha: '0',
+          estadoLampadaAmarela: '1',
+          estadoLampadaVerde: '0'
+        });
+      break;
+      
+      case 3:
+        this.setState({
+          estadoLamapadaVermelha: '0',
+          estadoLampadaAmarela: '0',
+          estadoLampadaVerde: '1'
+        });
+      break;
+    }
+  }
+  
   render () {
     return (
       <div>
         <Lampada cor='vermelho' sequencia='1' estado={this.state.estadoLamapadaVermelha}/>
         <Lampada cor='amarelo' sequencia='2' estado={this.state.estadoLampadaAmarela}/>
         <Lampada cor='verde' sequencia='3' estado={this.state.estadoLampadaVerde}/>
-        <Controlador handleClick={this.controlaCiclo} ciclo={this.state.ciclo}/>
+        <Controlador handleClick={this.controlaSemaforo} ciclo={this.state.ciclo}/>
       </div>
     )
   }
